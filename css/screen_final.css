@@ -1,0 +1,108 @@
+ fieldset{
+     border:0;
+     margin:0;
+     padding:10px;
+}
+ input{
+     -webkit-appearance:none;
+     border-radius:0 
+}
+ html{
+     font-size:16px 
+}
+ body{
+     font-size:1rem;
+     line-height:1.5;
+     font:14px/18px Arial, Helvetica, sans-serif;
+     color:#000000;
+}
+ h1{
+     font-size:1.75rem 
+}
+ h1,h2{
+     color:#880015;
+     line-height:1.2 
+}
+ h2{
+     font-size:1.375rem 
+}
+ a{
+     text-decoration:none;
+     color:#008fd5 
+}
+ a:hover{
+     color:#006da2;
+     transition:color .15s ease 0s 
+}
+ b,strong{
+     font-weight:500 
+}
+ .button{
+     background-color:transparent!important;
+     background-image:none!important;
+     white-space:nowrap!important;
+     -webkit-appearance:none;
+     appearance:none;
+     -webkit-user-select:none;
+     font-family:inherit!important;
+     padding:.5rem .875rem!important;
+     font-size:1rem!important;
+     line-height:1.5rem!important;
+     border-radius:3px!important;
+     text-decoration:none!important;
+     cursor:pointer!important;
+     display:inline-block!important;
+     text-align:center!important;
+     background-color:#008fd5!important;
+     color:#fff!important;
+     border:1px solid transparent!important;
+     transition:all .3s ease 0s!important;
+     margin-bottom:2%;
+}
+ .select,.text-input,.text-input--small{
+     font-family:inherit!important;
+     background:#fff!important;
+     font-size:1rem!important;
+     line-height:1.5rem!important;
+     padding:.5rem .75rem!important;
+     border:1px solid rgba(0,0,0,.1)!important 
+}
+ body{
+     max-height:100%;
+     max-width:100%;
+     background-color:#fff;
+     color:rgba(0,0,0,.87) 
+}
+ select{
+     width:100%!important;
+     margin-bottom:0.2em;
+}
+ input[type=text] {
+     width:70%;
+}
+ input:not(.no-focus):focus,keygen:not(.no-focus):focus,select:not(.no-focus):focus,textarea:not(.no-focus):focus{
+     outline-color:#008fd5;
+     padding:10px;
+}
+ .container {
+     text-align:center;
+	 margin-left:30%;
+}
+@media only screen and (max-width: 860px) {
+
+.container {
+     text-align:center;
+	 margin-left:0%;
+}
+	 
+} 
+	 
+ .formclass {
+     width:40%;
+     margin-left:30%;
+}
+ .secondform {
+     width:40%;
+     margin-left:30%;
+}
+ 

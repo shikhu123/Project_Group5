@@ -1,0 +1,304 @@
+ .main2 {
+     width:92%;
+     border: 1px solid #ededed;
+     -webkit-box-shadow: 4px 2px 5px #ccc, -4px 2px 5px #ccc;
+     -moz-box-shadow: 4px 2px 5px #ccc,-4px 2px 5px #ccc;
+     box-shadow: 4px 2px 5px #ccc, -4px 2px 5px #ccc;
+     overflow:hidden;
+     padding:0 10px;
+     margin-left:45px;
+}
+ .wbr {
+     word-break: break-all;
+}
+ .property {
+     width:100%;
+     height:auto;
+}
+ .inner {
+     position: relative;
+     float: left;
+     width: 60%;
+     background: #fff;
+     border: 1px #ddd solid;
+     margin-bottom: 16px;
+     border-radius: 0;
+     box-shadow: none;
+     margin: 10px 10px ;
+     border-radius:5px;
+}
+ .top-inner {
+     padding: 10px 10px;
+     border-bottom: 1px #ddd solid;
+     background: #f4f4f4;
+     border-radius: 5px 5px 0 0;
+     box-sizing: border-box;
+     vertical-align: middle;
+     display: inline-block;
+     width: 100%;
+     position: relative;
+}
+ .fleft {
+     color: #146fe1;
+     font-size: 15px;
+     font-weight: 700;
+     width: 76%;
+     max-width: none;
+     margin: 0 15px 0 5px;
+     display: inline-block;
+     vertical-align: middle;
+}
+ .fright {
+     position: absolute;
+     right: 0;
+     top: 0;
+     margin-top: 7px;
+     margin-right: 5px;
+}
+ .middle {
+     position: relative;
+     float: left;
+     width: 100%;
+     background: #fff;
+     margin-bottom: 16px;
+     box-shadow: none;
+}
+ .mleft {
+     float:left;
+     margin: 10px 8px 0;
+     background: #fff;
+     height: auto;
+     width: 190px;
+     opacity: .8;
+     position:relative;
+}
+ .mright {
+     float:left;
+     margin: 10px 10px;
+     font-size: 13px;
+     position: relative;
+}
+ .sep {
+     margin :10px 0!important;
+     border-bottom: 1px #e7e7e7 solid;
+     padding: 5px 0;
+     clear: both;
+}
+ .sep1 {
+     margin :5px 0!important;
+     padding: 5px 0;
+     clear: both;
+}
+ .p5 {
+     padding: 5px;
+}
+ span {
+     display: block;
+     float: left;
+}
+ .dealer {
+     padding : 10px;
+}
+ .contact span {
+     border:1px #ddd solid;
+     padding:5px ;
+     margin:5px 10px;
+     background:#880015;
+     color:#FFFFFF;
+}
+ .sidebar {
+     margin:10px;
+     float:right;
+     width:30%;
+     position:relative;
+     background-color: #f4f4f4;
+     border: 1px solid #f1f1f2;
+}
+ li {
+     display: list-item;
+     text-align: -webkit-match-parent;
+}
+ .content {
+     font-family: Larsseit,'Helvetica Neue',Helvetica,Arial,Sans-serif;
+     line-height: 1.6em;
+     padding: 20px;
+}
+ .searchbox {
+     margin-left:10px;
+     margin-top:10px;
+     padding:5px 5px;
+}
+ .btn {
+     padding:5px 20px;
+     border:1px #ddd solid;
+     margin:5px 10px;
+     background:#880015;
+     color:#ffffff;
+     font-family: Larsseit,'Helvetica Neue',Helvetica,Arial,Sans-serif;
+     line-height: 1.6em;
+     border-radius:4px;
+}
+ aside {
+     background:#f4f4f4;
+}
+ .pagination {
+     text-align:center;
+     margin-top:160%;
+     padding: 15px 16px;
+}
+ .pagination a {
+     color: black;
+     padding: 8px 16px;
+     text-decoration: none;
+}
+ .pagination a.active {
+     background-color: #880015;
+     color: white;
+}
+ .pagination a:hover:not(.active) {
+     background-color: #ddd;
+}
+ .fright b {
+     font-size:1.25em;
+}
+ b {
+     font-size:1.10em;
+}
+ .dropbtn {
+     padding:5px 20px;
+     border:1px #ddd solid;
+     margin:5px 10px;
+     background:#880015;
+     color:#ffffff;
+     font-family: Larsseit,'Helvetica Neue',Helvetica,Arial,Sans-serif;
+     line-height: 1.6em;
+     border-radius:4px;
+}
+ .dropdown {
+     position: relative;
+     display: inline-block;
+}
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #FFFFFF;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+}
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+ .dropdown-content a:hover {
+     background-color: #ddd;
+     font-size:1.25em;
+}
+ .dropdown:hover .dropdown-content {
+    display: block;
+}
+ .dropdown {
+     margin:0;
+     padding:0;
+     text-align:center;
+}
+ ul.category li {
+     margin-left:2%;
+}
+ ul.location li {
+     margin-left:2%;
+}
+ ul.category li a {
+     font-size:1.0em;
+     color: black;
+}
+ ul.category li a:hover {
+     color:blue;
+}
+ ul.location li {
+     font-size:1.0em;
+}
+ .property {
+     transition: transform .2s;
+}
+ .property:hover {
+     -ms-transform: scale(1.5);
+    /* IE 9 */
+     -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+     transform: scale(1.2);
+     margin: 0 5%;
+}
+ @media only screen and (max-width:1001px) {
+     .sidebar {
+         display:none;
+    }
+     .pagination {
+         margin:1%;
+    }
+     .main2 {
+         margin:2%;
+    }
+     .inner {
+         float:none;
+         margin:5%;
+         width:90%;
+    }
+     .contact {
+         overflow:hidden;
+    }
+     .fleft {
+         width:80%;
+    }
+     .fright {
+         width:20% 
+    }
+}
+ 
+ .button123 {
+     background-color: #880015;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin-left:30%;
+     cursor: pointer;
+     border:1.5px solid #2F4F4F;
+     margin-top:1%;
+     border-radius:0.6em;
+}
+ .button124 {
+     background-color:#D3D3D3;
+     border: none;
+     color: black;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin-left:10%;
+     cursor: pointer;
+     border:1.5px solid #2F4F4F;
+     margin-top:1%;
+     border-radius:0.6em;
+}
+.button125 {
+     background-color:#D3D3D3;
+     border: none;
+     color: black;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin-left:10%;
+     cursor: pointer;
+     border:1.5px solid #2F4F4F;
+     margin-top:1%;
+     border-radius:0.6em;
+}
