@@ -121,8 +121,6 @@ margin-right:10%;
   vertical-align: middle;
 }
 
-
-
 li.active a::after {
   border: 0.25em solid transparent;
   border-bottom-color: #50cba1;
