@@ -56,7 +56,8 @@ body {
   }
   
   h1.temp {
-    margin: 0;
+    margin: 1;
+    align-items: center;
     margin-bottom: 0.4em;
   }
   
