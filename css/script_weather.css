@@ -57,7 +57,8 @@ body {
   
   h1.temp {
     margin: 1;
-    align-items: center;
+    text-align: center;
+    text-color : Red;
     margin-bottom: 0.4em;
   }
   
