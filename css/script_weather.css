@@ -84,3 +84,56 @@ body {
     top: 0;
     left: 20px;
   }
+  footer a:hover {
+    text-decoration:underline;
+}
+footer {
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    padding:1em 0 1em 0;
+    background:url(../images/nav-bg.png) 0 0 repeat;
+}
+.footerlogo {
+    float:left;
+    width:50%;
+}
+footer a {
+    color:#FFFFFF;
+    font-weight:bold;
+}
+footer p {
+    color:#FFFFFF;
+    font-size:0.7em;
+}
+article{
+    float:left;
+    width:100%;
+    margin-left:0.5em;
+}
+#article3 {
+    text-align:center;
+    margin-top:4em;
+    margin-bottom:3em;
+}
+#article3 img{
+    width:60%;
+}
+.topProperty1 {
+    width:31%;
+}
+footer {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  padding:32px 0 45px 0;
+  background:#131313;
+}
+footer p, footer a {
+  color:#939393;
+}
+footer a:hover {
+  text-decoration:underline;
+}
