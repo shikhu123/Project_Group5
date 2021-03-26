@@ -98,15 +98,6 @@ body {
     text-decoration:underline;
 }
 
-
-footer {
-    width:100%;
-    position:relative;
-    overflow:hidden;
-    text-align:center;
-    padding:1em 0 1em 0;
-    background:url(../images/nav-bg.png) 0 0 repeat;
-}
 .footerlogo {
     float:left;
     width:50%;
