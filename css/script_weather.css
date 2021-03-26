@@ -8,17 +8,17 @@ body {
   background: #222;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
   font-size: 120%;
-  padding : 20em;
+
 }
 
 .card {
   background: #000000d0;
   color: white;
-  padding: 2em;
+  padding: 5em;
   border-radius: 30px;
   width: 100%;
   max-width: 420px;
-  margin: 1em;
+  margin: 5em;
 }
 
 .search {
@@ -86,16 +86,16 @@ h1.temp {
   left: 20px;
 }
 footer {
+  display : contents;
   width:100%;
   position:relative;
   overflow:hidden;
   text-align:center;
-  padding:32px 0 32px 0;
-  background:black;
+  padding:30px 0 30px 0;
 }
 .footerlogo {
   text-align:center;
-  width:50%;
+  width:100%;
 }
 footer a {
   color:#FFFFFF;
