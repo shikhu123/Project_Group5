@@ -121,8 +121,9 @@
      position:relative;
      overflow:hidden;
      text-align:center;
-     padding:1em 0 1em 0;
-     background:url(../images/nav-bg.png) 0 0 repeat;
+     padding:10em 0 10em 0;
+     margin : 10 ;
+     
 }
  .footerlogo {
      text-align:center;

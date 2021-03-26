@@ -8,6 +8,7 @@ body {
   background: #222;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
   font-size: 120%;
+  padding : 20em;
 }
 
 .card {
@@ -89,7 +90,7 @@ footer {
   position:relative;
   overflow:hidden;
   text-align:center;
-  padding:1em 0 1em 0;
+  padding:10em 0 10em 0;
   background:url(../images/nav-bg.png) 0 0 repeat;
 }
 .footerlogo {
