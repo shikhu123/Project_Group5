@@ -71,7 +71,7 @@
      font-weight:bold;
      padding:1%;
      width:80%;
-     #border:0.5px solid #2F4F4F;
+     border:0.5px solid #2F4F4F;
      border-radius:0.4em;
 	 box-shadow:3px 5px #d8d7d5;
 }
@@ -107,8 +107,7 @@
      width:15%;
      height:1%;
 }
- .amen{
-}
+
  .val{
      color:black;
 }
@@ -191,7 +190,7 @@
      width:100%;	 
      margin-bottom:3%;
      border-radius:0.3em;
-     #border:2px solid #2F4F4F;
+     border:2px solid #2F4F4F;
 	 box-shadow:3px 5px #d8d7d5;
      background-color: #ffffff;
 }
@@ -328,4 +327,5 @@
 	.button123 {
 		margin-left:10%;
 		
+    }
 }

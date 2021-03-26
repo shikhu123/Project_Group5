@@ -1,8 +1,7 @@
  body {
      font:1em/1.5em Arial, Helvetica, sans-serif;
      color:#000000;
-     #background-image: linear-gradient(#E5E0E0, white);
-	 #background-image: linear-gradient(#ffffff, #74550f)
+     background-image: linear-gradient(#E5E0E0, white);
 }
  img.logo {
      width:100%;

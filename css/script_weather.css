@@ -90,12 +90,12 @@ footer {
   position:relative;
   overflow:hidden;
   text-align:center;
-  padding:10em 0 10em 0;
-  background:url(../images/nav-bg.png) 0 0 repeat;
+  padding:32px 0 32px 0;
+  background:black;
 }
 .footerlogo {
   text-align:center;
-  width:100%;
+  width:50%;
 }
 footer a {
   color:#FFFFFF;
