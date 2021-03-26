@@ -1,9 +1,9 @@
 body {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  height: 10vh;
+  margin: 10;
   font-family: 'Open Sans', sans-serif;
   background: #222;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
@@ -21,7 +21,7 @@ body {
 }
 
 .search {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
@@ -83,4 +83,27 @@ h1.temp {
   position: absolute;
   top: 0;
   left: 20px;
+}
+footer {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  padding:1em 0 1em 0;
+  background:url(../images/nav-bg.png) 0 0 repeat;
+}
+.footerlogo {
+  text-align:center;
+  width:100%;
+}
+footer a {
+  color:#FFFFFF;
+  font-weight:bold;
+}
+footer p {
+  color:#FFFFFF;
+  font-size:0.7em;
+}
+.info{
+  font-weight:bold;
 }
