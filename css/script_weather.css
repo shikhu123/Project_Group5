@@ -84,3 +84,12 @@ body {
     top: 0;
     left: 20px;
   }
+
+  footer {
+    width: 518%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 32px 0 45px 0;
+    background: #131313;
+}
