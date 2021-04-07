@@ -41,15 +41,24 @@ const weather = {
     } = data.coord
 
 	
-		document.querySelector(".city").innerText = "Weather in " + name;
+		document.querySelector(".city").innerText = name + " Weather";
 		document.querySelector(".icon").src =
 			"https://openweathermap.org/img/wn/" + icon + ".png";
 		document.querySelector(".description").innerText = description;
-		document.querySelector(".temp").innerText = temp + "°C";
+		document.querySelector(".temp").innerText = 
+       "Temperature : " + temp +  " °C ";
     document.querySelector(".lat").innerText =
 			"Latitude: " + lat + " AM";
 		document.querySelector(".lon").innerText =
 			"Longitude: " + lon + " PM";  
+    document.querySelector(".icon").src =
+			"https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector(".sunrise").innerText =
+			"Sunrise: " + sunrise + " AM";
+    document.querySelector(".icon").src =
+			"https://openweathermap.org/img/wn/" + icon + ".png";
+		document.querySelector(".sunset").innerText =
+			"Sunset: " + sunset + " PM";      
 		document.querySelector(".humidity").innerText =
 			"Humidity: " + humidity + "%";
 		document.querySelector(".wind").innerText =
@@ -57,12 +66,7 @@ const weather = {
     document.querySelector(".pressure").innerText =
       "Pressure: " + pressure + " hpa";
     document.querySelector(".feels_like").innerText =
-      "Feels Like: " + feels_like + " °C";  
-    document.querySelector(".sunrise").innerText =
-			"Sunrise: " + sunrise + " AM";
-		document.querySelector(".sunset").innerText =
-			"Sunset: " + sunset + " PM";    
-	  
+      "Feels Like: " + feels_like + " °C";   
 
 		document.querySelector(".weather").classList.remove("loading");
 		document.body.style.backgroundImage =
@@ -85,4 +89,4 @@ document
 		}
 	});
 
-weather.fetchWeather("Scarborough");
+weather.fetchWeather(city);
