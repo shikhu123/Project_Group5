@@ -1,11 +1,9 @@
-let weather = {
+const weather = {
 	apiKey: "4e8f8df6a8188cf75777403b5405bbc1",
 	fetchWeather: function (city) {
 		fetch(
-				"https://api.openweathermap.org/data/2.5/weather?q=" +
-				city +
-				"&units=metric&appid=" +
-				this.apiKey
+				`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&lang=fr&q=${city}&units=metric&appid=${this.apiKey}`
+
 			)
 			.then((response) => {
 				if (!response.ok) {
@@ -26,31 +24,45 @@ let weather = {
 		} = data.weather[0];
 		const {
 			temp,
-			humidity
+			humidity,
+      pressure,
+      feels_like
 		} = data.main;
 		const {
 			speed
 		} = data.wind;
-		const {
-			sunset
-		} = data.sunset;
-		const {
-			sunrise
-		} = data.sunrise;
+    const {
+      sunrise,
+      sunset
+    } = data.sys;
+    const {
+      lat,
+      lon
+    } = data.coord
 
+	
 		document.querySelector(".city").innerText = "Weather in " + name;
 		document.querySelector(".icon").src =
 			"https://openweathermap.org/img/wn/" + icon + ".png";
 		document.querySelector(".description").innerText = description;
 		document.querySelector(".temp").innerText = temp + "°C";
-		documdocument.querySelector(".sunrise").innerText =
-			"Sunrise: " + sunrise + " AM";
-		document.querySelector(".sunset").innerText =
-			"Sunset: " + sunset + " PM";
+    document.querySelector(".lat").innerText =
+			"Latitude: " + lat + " AM";
+		document.querySelector(".lon").innerText =
+			"Longitude: " + lon + " PM";  
 		document.querySelector(".humidity").innerText =
 			"Humidity: " + humidity + "%";
 		document.querySelector(".wind").innerText =
 			"Wind speed: " + speed + " km/h";
+    document.querySelector(".pressure").innerText =
+      "Pressure: " + pressure + " hpa";
+    document.querySelector(".feels_like").innerText =
+      "Feels Like: " + feels_like + " °C";  
+    document.querySelector(".sunrise").innerText =
+			"Sunrise: " + sunrise + " AM";
+		document.querySelector(".sunset").innerText =
+			"Sunset: " + sunset + " PM";    
+	  
 
 		document.querySelector(".weather").classList.remove("loading");
 		document.body.style.backgroundImage =
