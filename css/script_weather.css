@@ -1,5 +1,5 @@
 body {
-  display: inline- flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
@@ -7,7 +7,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #222;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
   font-size: 120%;
+  background-size: cover;
 
 }
 
