@@ -21,19 +21,31 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
+    const { sunset } = data.sunset;
+    const { sunrise } = data.sunrise;
+    const { pressure } = data.pressure;
+    const { visibility } = data.visibility;
+    const { feelslike } = data.feelslike;
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
-    documdocument.querySelector(".sunrise").innerText =
-      "Sunrise: " + speed + " AM";
-document.querySelector(".pressure").innerText =
-      "Sunset: " + speed + " PM";ent.querySelector(".description").innerText = description;
+    document.querySelector(".description").innerText = description;
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
-document.querySelector(".weather").classList.remove("loading");
+    document.querySelector(".sunset").innerText =
+      "Sunset: " + speed + " km/h";
+    document.querySelector(".sunrise").innerText =
+      "Sunrise: " + speed + " km/h"; 
+    document.querySelector(".pressure").innerText =
+      "Pressure: " + speed + " km/h"; 
+    document.querySelector(".visibility").innerText =
+      "Visibility: " + speed + " km/h"; 
+    document.querySelector(".feelslike").innerText =
+      "Feels Like: " + speed + " km/h";    
+    document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1600x900/?" + name + "')";
   },
