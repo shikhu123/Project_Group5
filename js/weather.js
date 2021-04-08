@@ -1,3 +1,4 @@
+
 const weather = {
 	apiKey: "4e8f8df6a8188cf75777403b5405bbc1",
 	fetchWeather: function (city) {
@@ -7,8 +8,9 @@ const weather = {
 			)
 			.then((response) => {
 				if (!response.ok) {
-					alert("No weather found.");
-					throw new Error("No weather found.");
+					alert("No weather foundddd.");
+					throw new Error("No weather foundddddd.");
+					
 				}
 				return response.json();
 			})
@@ -31,15 +33,16 @@ const weather = {
 		const {
 			speed
 		} = data.wind;
-    const {
-      sunrise,
-      sunset
-    } = data.sys;
+    // const {
+    //   sunrise ,
+    //   sunset
+	  	  
+    // } = data.sys;
     const {
       lat,
       lon
     } = data.coord
-        
+	      
 		document.querySelector(".city").innerText = name + " Weather";
 		document.querySelector(".icon").src =
 			"https://openweathermap.org/img/wn/" + icon + ".png";
@@ -50,14 +53,13 @@ const weather = {
 			"Latitude: " + lat + " AM";
 		document.querySelector(".lon").innerText =
 			"Longitude: " + lon + " PM";  
-        document.querySelector(".icon").src =
-			"https://openweathermap.org/img/wn/" + icon + ".png";
-        document.querySelector(".sunrise").innerText =
-			"Sunrise: " + sunrise + " AM";
-        document.querySelector(".icon").src =
-			"https://openweathermap.org/img/wn/" + icon + ".png";
-	    document.querySelector(".sunset").innerText =
-			"Sunset: " + sunset + " PM";      
+        //document.querySelector(".icon").src =
+		//	"https://openweathermap.org/img/wn/" + icon + ".png";
+        // document.querySelector(".sunrise").innerText;
+        //document.querySelector(".icon").src =
+		//	"https://openweathermap.org/img/wn/" + icon + ".png";
+	    // document.querySelector(".sunset").innerText =
+		// 	"Sunset: " + sunset + " PM";      
 		document.querySelector(".humidity").innerText =
 			"Humidity: " + humidity + "%";
 		document.querySelector(".wind").innerText =
@@ -87,5 +89,7 @@ document
 			weather.search();
 		}
 	});
+
+	
 
 weather.fetchWeather(city);
