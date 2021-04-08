@@ -24,8 +24,8 @@ body {
     color: white;
     padding: 10em;
     border-radius: 50px;
-    width: 100%;
     max-width: 450px;
+    margin-left: 23%;
     margin-block-end: 30em;
 }
 
@@ -40,7 +40,7 @@ button {
   border-radius: 50%;
   border: none;
   height: 44px;
-  width: 44px;
+  width: 40px;
   outline: none;
   background: #7c7c7c2b;
   color: white;
@@ -93,13 +93,14 @@ h1.temp {
   top: 0;
   left: 20px;
 }
-footer {
+
+ footer { 
   width:100%;
   position:relative;
   overflow:hidden;
   text-align:center;
   margin : 10 ;
-  background-color: black;
+  
   
 }
 .footerlogo {
@@ -116,9 +117,9 @@ footer p {
 }
 .info{
   font-weight:bold;
-}
+} 
 
-@media only screen and (min-width : 992px) {
+ @media only screen and (max-width : 860px) { 
   .menuupper {
     display:inline;
   }
@@ -179,60 +180,55 @@ footer p {
 
       #wereport
       {
-           position:absolute;
-           left:132px;
-           width:100%;
-           display:inline-block;
-           margin-bottom:0%;
-           top:0px;
+           text-align: center;
       }
       #card {
         display: inline-block;
         position:absolute;    
-        height: 100vh;
-        width: 100vw;
-        margin-bottom:0%;
+        height: auto;
+        width: auto;
+        margin:10%;
+        margin-right:13%
       
       }
 
-/****************************footer************************/
 footer a:hover {
-  text-decoration:underline;
-}
-footer {
-  width:100%;
-  position:relative;
-  overflow:hidden;
-  text-align:center;
-  padding:1em 0 1em 0;
-  background:url(../images/nav-bg.png) 0 0 repeat;
-}
-.footerlogo {
-  float:left;
-  width:50%;
-}
-footer a {
-  color:#FFFFFF;
-  font-weight:bold;
-}
-footer p {
-  color:#FFFFFF;
-  font-size:0.7em;
-}
-article{
-  float:left;
-  width:100%;
-  margin-left:0.5em;
-}
-#article3 {
-  text-align:center;
-  margin-top:4em;
-  margin-bottom:3em;
-}
-#article3 img{
-  width:60%;
-}
-.topProperty1 {
-  width:31%;
-}
+         text-decoration:underline;
+    }
+     footer {
+         width:100%;
+         position:relative;
+         overflow:hidden;
+         text-align:center;
+         padding:1em 0 1em 0;
+         background:url(../images/nav-bg.png) 0 0 repeat;
+    }
+     .footerlogo {
+         float:left;
+         width:50%;
+    }
+     footer a {
+         color:#FFFFFF;
+         font-weight:bold;
+    }
+     footer p {
+         color:#FFFFFF;
+         font-size:0.7em;
+    }
+     article{
+         float:left;
+         width:100%;
+         margin-left:0.5em;
+    }
+     #article3 {
+         text-align:center;
+         margin-top:4em;
+         margin-bottom:3em;
+    }
+     #article3 img{
+         width:60%;
+    }
+     .topProperty1 {
+         width:31%;
+    }
 }

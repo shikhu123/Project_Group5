@@ -8,8 +8,9 @@ const weather = {
 			)
 			.then((response) => {
 				if (!response.ok) {
-					alert("No weather foundddd.");
-					throw new Error("No weather foundddddd.");
+					alert("No weather found.");
+					throw new Error("No weather found.");
+					
 					
 				}
 				return response.json();
@@ -33,11 +34,11 @@ const weather = {
 		const {
 			speed
 		} = data.wind;
-    // const {
-    //   sunrise ,
-    //   sunset
+    const {
+      sunrise ,
+      sunset
 	  	  
-    // } = data.sys;
+    } = data.sys;
     const {
       lat,
       lon
@@ -53,13 +54,27 @@ const weather = {
 			"Latitude: " + lat + " AM";
 		document.querySelector(".lon").innerText =
 			"Longitude: " + lon + " PM";  
-        //document.querySelector(".icon").src =
-		//	"https://openweathermap.org/img/wn/" + icon + ".png";
-        // document.querySelector(".sunrise").innerText;
-        //document.querySelector(".icon").src =
-		//	"https://openweathermap.org/img/wn/" + icon + ".png";
-	    // document.querySelector(".sunset").innerText =
-		// 	"Sunset: " + sunset + " PM";      
+        document.querySelector(".icon").src =
+			"https://openweathermap.org/img/wn/" + icon + ".png";
+
+			const sunriseGMT = new Date(sunrise * 1000);
+			console.log("test2 "+sunriseGMT);
+        document.querySelector(".sunrise").innerText =
+		    "Sunrise: " + sunriseGMT + " AM"; 
+			console.log("test1 "+sunrise);
+		
+
+
+			const sunsetGMT = new Date(sunset * 1000);
+			console.log("test3 "+sunsetGMT);
+        document.querySelector(".icon").src =
+			"https://openweathermap.org/img/wn/" + icon + ".png";
+	    document.querySelector(".sunset").innerText =
+			"Sunset: " + sunsetGMT + " PM";    
+			console.log("test4 "+sunset);  
+
+
+
 		document.querySelector(".humidity").innerText =
 			"Humidity: " + humidity + "%";
 		document.querySelector(".wind").innerText =
