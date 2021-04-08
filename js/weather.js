@@ -40,12 +40,6 @@ const weather = {
       lon
     } = data.coord
         
-	function getlocattime()
-	{
-	    var dt = new Date();
-		document.querySelector(".sunrise").innerText = dt;
-    }	
-	    
 		document.querySelector(".city").innerText = name + " Weather";
 		document.querySelector(".icon").src =
 			"https://openweathermap.org/img/wn/" + icon + ".png";
@@ -59,7 +53,7 @@ const weather = {
         document.querySelector(".icon").src =
 			"https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".sunrise").innerText =
-			"Sunrise: " + dt + " AM";
+			"Sunrise: " + sunrise + " AM";
         document.querySelector(".icon").src =
 			"https://openweathermap.org/img/wn/" + icon + ".png";
 	    document.querySelector(".sunset").innerText =
